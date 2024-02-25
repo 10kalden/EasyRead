@@ -53,3 +53,8 @@ button {
   padding: 5px 15px 5px 15px;
   margin: 10px 0 0 145px;
 }
+
+.logo-container {
+  display: flex;
+  margin-left: 450px;
+}
