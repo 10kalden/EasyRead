@@ -1,5 +1,6 @@
 body {
-  background-image: url("https://wallpaperaccess.com/full/233002.jpg");
+  background-image: url("bg-img.jpg");
+  background-size: cover;
 }
 .header {
   margin: 10px auto;
