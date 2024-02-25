@@ -1,8 +1,8 @@
-
 from flask import Flask, render_template, request, send_file
 from botok import WordTokenizer
 from botok.config import Config
 from pathlib import Path
+import os
 
 app = Flask(__name__, template_folder='.')
 
@@ -32,4 +32,4 @@ def download_token():
     return send_file('output.txt', as_attachment=True)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=os.getenv('FLASK_DEBUG', False))
