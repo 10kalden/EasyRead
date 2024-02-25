@@ -32,4 +32,4 @@ def download_token():
     return send_file('output.txt', as_attachment=True)
 
 if __name__ == '__main__':
-    app.run(debug=os.getenv('FLASK_DEBUG', False))
+    app.run(host='0.0.0.0', port=8080, debug=os.getenv('FLASK_DEBUG', False))
